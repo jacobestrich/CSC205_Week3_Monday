@@ -5,8 +5,29 @@ enum Major
 
 public class Student 
 {
-    String FirstName, LastName;
-    double GPA;
+    private String FirstName, LastName;
 
+    public String GetFirstName()
+    {
+        return FirstName;
+    }
+
+    public void SetFirstName(String NewName)
+    {
+        FirstName = NewName.toLowerCase();
+    }
+
+    public String GetLastName()
+    {
+        return LastName;
+    }
+
+    public void SetLastName(String NewName)
+    {
+        LastName = NewName.toUpperCase();
+    }
+
+
+    double GPA;
     Major Major;
 }
