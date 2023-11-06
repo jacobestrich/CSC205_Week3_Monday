@@ -57,10 +57,16 @@ public class Main
         Student2.SetFirstName("Tom");
         Student2.SetLastName("Tommy");
 
+        Student1.PrintNames();
+        System.out.println(Student1);
+
+        Student1.ChangNameAndMajor("Nelson", Major.ENGINEERING);
+        System.out.println(Student1);
+
         //System.out.println(Student1.FirstName);
         //System.out.println(Student2.FirstName); //will return null since it was not set with a value or initialized.
-        System.out.println(Student1.GetFirstName() + " " + Student1.GetLastName());
-        System.out.println(Student2.GetFirstName() + " " + Student2.GetLastName());
+        // System.out.println(Student1.GetFirstName() + " " + Student1.GetLastName());
+        // System.out.println(Student2.GetFirstName() + " " + Student2.GetLastName());
     }
 
 
